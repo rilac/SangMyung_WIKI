@@ -1,1 +1,1 @@
-# SangMyung_WIKI
+# sangmyung_wiki

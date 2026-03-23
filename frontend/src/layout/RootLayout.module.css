@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "SUIT-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2")
+    format("woff2");
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  height: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 110px auto auto auto;
+  font-family: "SUIT-Regular";
+  font-weight: 700;
+  font-size: 2.5vmin;
+}
+
+/* Header */
+.item:nth-child(1) {
+  text-align: left;
+  position: relative;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  border-bottom: 3px solid #ededed;
+}
+
+/* Outlet */
+.item:nth-child(2) {
+  grid-column: 1 / 4;
+  grid-row: 2 / -1;
+  border-radius: 20px;
+  background: #e5ecf4;
+  margin: 11px 26px 38px 47px;
+  padding: 27px 41px 27px 41px;
+}
+
+/* 인기글 */
+.item:nth-child(3) {
+  position: relative;
+  grid-column: 4 / -1;
+  grid-row: 2 / 3;
+  border-radius: 20px;
+  background: #cedbea;
+  margin: 11px 47px 11px 0px;
+  padding: 17px 24px 17px 24px;
+  min-height: 400px;
+}
+
+/* 최근변경 */
+.item:nth-child(4) {
+  position: relative;
+  grid-column: 4 / -1;
+  grid-row: 3 / 4;
+  border-radius: 20px;
+  background: #cedbea;
+  margin: 0px 47px 38px 0px;
+  padding: 17px 24px 17px 24px;
+  min-height: 400px;
+}
